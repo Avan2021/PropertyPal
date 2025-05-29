@@ -10,7 +10,7 @@ export const SocketContextProvider = ({ children }) => {
 
     useEffect(() => {
         // Update to use the same port as the backend
-        setSocket(io("http://localhost:8000", {
+        setSocket(io("https://propertypal-wbh0.onrender.com", {
             withCredentials: true
         }));
     }, []);
